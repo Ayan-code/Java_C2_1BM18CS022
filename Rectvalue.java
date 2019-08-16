@@ -25,6 +25,9 @@ class Rectvalue
   Rectangle R=new Rectangle();
   R.area();
   R.display();
+  Rectangle R1=new Rectangle();
+  R1.area();
+  R1.display();
  }
 }
   
