@@ -50,18 +50,35 @@ class Timedemo
  {
   Scanner sc=new Scanner(System.in);
   int ch;
-  Time T=new Time();
   while(1)
   {
    System.out.println("Enter your choice:");
    ch=sc.nextInt();
    switch(ch)
    {
-    case 1:  System.out.println(Enter hours min and second:");
-             int h1=sc.nextInt();
-             int m1=sc.nextInt();
-             int s1=sc.nextInt();
-             Time T1=new Time(h1,m1,s1);
-             break;
-    case 2:  
-  
+    case 1:   System.out.println(Enter hours min and second:");
+              int h1=sc.nextInt();
+              int m1=sc.nextInt();
+              int s1=sc.nextInt();
+              Time T1=new Time(h1,m1,s1);
+              break;
+    case 2:   Time a=new Time();
+              System.out.println("Enter Hour Minutes and seconds");
+              int h2=sc.nextInt();
+              int m2=sc.nextInt();
+              int s2=sc.nextInt();
+              a.currtime(h2,m2,s2);
+              a.print();
+              break;
+    case 3:   Time b=new Time();
+              System.out.println("Enter Hour Minutes and seconds");
+              int h3=sc.nextInt();
+              int m3=sc.nextInt();
+              int s3=sc.nextInt();
+              b.advance(h3,m3,s3);
+              b.print();                            
+              break;
+     }
+    }
+   }
+  }
