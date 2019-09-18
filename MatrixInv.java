@@ -45,7 +45,7 @@ class Mat
         {
             int cof[][]=new int[2][2];
             for(int i=0;i<2;i++)
-                for(int j=0;j<0;j++)
+                for(int j=0;j<2;j++)
                 {
                     double m=Math.pow(-1,(i+j));
                     cof[i][j]=m*arr[i][j];
